@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indumentaria de Algodón - Los Juries</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/1.png" alt="Algodón Los Juries">
+            </div>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#location">Ubicación</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a target="_blank" href="shop.html">Ir a la Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="animated fadeIn">
+            <h1>Bienvenidos Tela Pura</h1>
+            <p>Calidad y confort en cada prenda.</p>
+        </section>
+        <section id="about" class="animated fadeIn">
+            <h2>Sobre Nosotros</h2>
+            <h3>Historia de Los Juries</h3>
+            <p>Los Juries es una localidad situada en el sureste de la provincia de Santiago del Estero, en Argentina. Se encuentra a unos 270 kilómetros de la capital provincial. Fundada en 1892, Los Juries ha sido históricamente un centro agrícola, destacándose por la producción de algodón, maíz, y soja. La economía del pueblo ha estado siempre vinculada a la agricultura, siendo el algodón el principal cultivo que ha impulsado su desarrollo económico.</p>
+            <h3>Nuestra Historia</h3>
+            <p>La empresa <strong>"Tela Pura"</strong> fue fundada en 2005 por la familia <strong>Sammauro</strong>, con la visión de producir ropa de alta calidad utilizando el algodón cultivado en la región. Comenzando con una pequeña fábrica, la empresa ha crecido hasta convertirse en un referente de la moda sostenible en Argentina. Los productos de Algodón Los Juries se destacan por su confort y durabilidad, atributos que han sido fundamentales para ganar la confianza de los consumidores.</p>
+        </section>
+        <section id="products" class="animated fadeIn">
+            <h2>Nuestros Productos</h2>
+            <div class="product">
+                <h3>Remeras de Algodón</h3>
+                <p>Nuestras remeras están confeccionadas con el mejor algodón de la región, asegurando una textura suave y una durabilidad excepcional.</p>
+            </div>
+            <div class="product">
+                <h3>Camisas de Algodón</h3>
+                <p>Las camisas de Algodón Los Juries combinan elegancia y comodidad, perfectas para cualquier ocasión.</p>
+            </div>
+            <div class="product">
+                <h3>Pantalones de Algodón</h3>
+                <p>Ofrecemos pantalones que no solo son cómodos sino también resistentes, ideales para el día a día.</p>
+            </div>
+        </section>
+        <section id="location" class="animated fadeIn">
+            <h2>Ubicación</h2>
+            <div id="map"></div>
+        </section>
+        <section id="contact" class="animated fadeIn">
+            <h2>Contacto</h2>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input class="asd" style="z-index: 999" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input  class="asd" style="z-index: 999" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea class="asd" style="z-index: 999" id="message" name="message" required></textarea>
+                    </div>
+                    <button class="submit-btn asd" type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Tela Pura</p>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
