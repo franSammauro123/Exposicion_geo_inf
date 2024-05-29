@@ -1,3 +1,4 @@
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -114,28 +115,38 @@ button:hover {
     .nav-links {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
+        position: fixed;
+        top: 0;
         left: 0;
         width: 100%;
+        height: 100%;
         background-color: #161b22;
-        padding: 10px 0;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+        transform: translateY(-100%);
+        z-index: 1; /* Ensure it's on top of other content */
+    }
+
+    .nav-links.active {
+        display: flex;
+        transform: translateY(0);
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     .hamburger {
         display: block;
-        position: absolute;
+        position: fixed; /* Ensure it's always visible */
         top: 15px;
         right: 15px;
         font-size: 1.5em;
+        z-index: 2; /* Ensure it's on top of the menu */
+        color: white; /* Ensure it's visible */
     }
 
-    /* Agregar esta sección para los productos en vista móvil */
     main {
         flex-direction: column;
         align-items: center;
